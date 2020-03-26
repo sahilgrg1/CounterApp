@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:textSize="50dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:id="@+id/textee"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textee"
+        android:text="RESET"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"
+        android:id="@+id/reset"/>
+
+    <Button
+        android:id="@+id/incree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/reset"
+        android:layout_below="@id/textee"
+        android:layout_centerInParent="true"
+        android:text="+"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <Button
+        android:id="@+id/decree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/reset"
+        android:layout_below="@id/textee"
+        android:layout_centerInParent="true"
+        android:text="-"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="237dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
